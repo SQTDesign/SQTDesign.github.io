@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Музыка — DJ UNDERWALL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('underwall-theme')||'light'}catch(e){}</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="logo">
+      <span class="logo__dot"></span>
+      DJ UNDERWALL
+    </a>
+
+    <ul class="nav__links" id="navLinks">
+      <li><a class="nav__link" href="index.html">Главная</a></li>
+      <li><a class="nav__link" href="about.html">О себе</a></li>
+      <li><a class="nav__link is-active" href="music.html" aria-current="page">Музыка</a></li>
+      <li><a class="nav__link" href="events.html">События</a></li>
+      <li><a class="nav__link" href="contact.html">Контакты</a></li>
+    </ul>
+
+    <div class="nav__actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Переключить тему">
+        <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+        </svg>
+      </button>
+      <button class="icon-btn burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main class="page" id="page-music">
+  <div class="wrap">
+    <section>
+      <span class="tag">Дискография</span>
+      <h1 class="h1">Моя <span class="accent">музыка</span></h1>
+      <p class="body-l body-l--lead">Свежие релизы, миксы и live-записи выступлений.</p>
+    </section>
+
+    <section class="section section--pt48">
+      <div class="track-list">
+        <div class="track">
+          <div class="track__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="track__info">
+            <div class="track__title">Underworld</div>
+            <div class="track__meta">Melodic Techno · 2024</div>
+          </div>
+          <div class="track__dur">07:24</div>
+        </div>
+        <div class="track">
+          <div class="track__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="track__info">
+            <div class="track__title">Deep Signal</div>
+            <div class="track__meta">Dark Disco · 2024</div>
+          </div>
+          <div class="track__dur">06:12</div>
+        </div>
+        <div class="track">
+          <div class="track__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="track__info">
+            <div class="track__title">Wall of Sound (Original Mix)</div>
+            <div class="track__meta">Techno · 2023</div>
+          </div>
+          <div class="track__dur">08:45</div>
+        </div>
+        <div class="track">
+          <div class="track__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="track__info">
+            <div class="track__title">Boiler Room Moscow 2023</div>
+            <div class="track__meta">Live Set · 2023</div>
+          </div>
+          <div class="track__dur">58:30</div>
+        </div>
+        <div class="track">
+          <div class="track__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="track__info">
+            <div class="track__title">Depth Podcast #042</div>
+            <div class="track__meta">DJ Mix · 2024</div>
+          </div>
+          <div class="track__dur">62:18</div>
+        </div>
+        <div class="track">
+          <div class="track__play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="track__info">
+            <div class="track__title">Analog Dreams EP</div>
+            <div class="track__meta">Melodic Techno · 2024</div>
+          </div>
+          <div class="track__dur">24:11</div>
+        </div>
+      </div>
+
+      <div class="cards cards--2 cards--mt">
+        <article class="card">
+          <h3 class="card__title">Spotify</h3>
+          <p class="card__body card__body--mb">Слушай все релизы в высоком качестве. Более 2M прослушиваний за год.</p>
+          <button class="btn btn--primary">Открыть профиль</button>
+        </article>
+        <article class="card">
+          <h3 class="card__title">SoundCloud</h3>
+          <p class="card__body card__body--mb">Эксклюзивные миксы, unreleased-треки и live-записи выступлений.</p>
+          <button class="btn btn--ghost">Слушать на SC</button>
+        </article>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <p class="footer__copy">© 2026 DJ UNDERWALL. Все права защищены.</p>
+    <div class="socials">
+      <a href="#" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+      </a>
+      <a href="#" aria-label="SoundCloud">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12v4M5 10v6M8 8v8M11 7v9c2-2 5-3 7-2 2 .8 3 3 3 5 0 2-1 3-3 3H4"/></svg>
+      </a>
+      <a href="#" aria-label="Spotify">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M7 10c3-1 7-1 10 1M8 14c2-1 5 0 7 1M9 17c1.5-.5 3 0 4.5.7"/></svg>
+      </a>
+      <a href="#" aria-label="Telegram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 3L2 11l6 2 2 6 4-5 6 4 2-15z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
